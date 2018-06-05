@@ -58,7 +58,12 @@ nav ul li {
 
 /**** Float not working! ***/
 .left, .middle, .right {
+	width: 300px;
 	float: left;
+}
+.middle {
+	border-left: 2px solid #e6e6ff;
+	border-right: 2px solid #e6e6ff;
 }
 
 h2 {
