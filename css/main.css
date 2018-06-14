@@ -2,6 +2,10 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -10,40 +14,13 @@ header {
 	margin: 20px;
 }
 
-/*main {
-	height: 300px;
-}
-
-footer {
-	height: 100px;
-}*/
-
-.full-width {
-	width: 1200px;
-	margin: 0 auto;
-}
-
-.half-width {
-	width: 600px;
-	float: left;
-}
-
-.third-width {
-	width: 388px;
-	float: left;
-}
-
 #rogue, nav, h2, #specials, #fresh {
 	color: #77a466;
 }
 
 h1, h2, h3, nav, footer {
 	text-transform: uppercase;
-	font-weight: 800;
-}
-
-#welcome p, #more-info p {
-	font-weight: 600;
+	/*font-weight: 800;*/
 }
 
 /***HEADER***/
@@ -51,69 +28,54 @@ h1, h2, h3, nav, footer {
 h1 {
 	color: black;
 	font-size: 30px;
+	float: left;
+}
+
+nav {
+	float: right;
 }
 
 nav ul li {
 	display: inline-block;
 	font-size: 14px;
-	margin: 7px;
+	margin: 8px;
+	font-weight: 600;
 }
+
+/***MAIN***/
 
 #green-beans {
 	border-top: 5px solid #77a466;
 	border-bottom: 5px solid #77a466;
 	margin: 20px 0px 20px 0px;
+	clear: both;
 }
 
-/***WELCOME***/
+.top-section {
+	border-bottom: 2px solid #e6e6ff;
+	clear: both;
+}
 
-#welcome .full-width {
-	padding: 0 20px;
+/**** Float not working! ***/
+.left, .middle, .right {
+	width: 300px;
+	float: left;
+}
+.middle {
+	border-left: 2px solid #e6e6ff;
+	border-right: 2px solid #e6e6ff;
 }
 
 h2 {
 	font-size: 18px;
 }
 
-#welcome p {
-	font-size: 16px;
-	line-height: 175%;
-}
-
-/***MORE INFO***/
-
-#more-info .full-width {
-	padding: 10px 20px 20px 20px;
-}
-
 h3 {
 	font-size: 12px;
 }
 
-#more-info p {
-	font-size: 16px;
-}
-
 #specials {
 	line-height: 250%;
-}
-
-.third-width {
-	border-top: 2px solid 	#e6e6ff;
-	/*border-bottom: 2px solid #e6e6ff;*/
-	height: 200px;
-	padding-top: 18px;
-}
-
-#reviews-third, #contact-third {
-	padding-left: 23px;
-	padding-right: 23px;
-}
-
-#reviews-third {
-	border: 2px solid #e6e6ff;;
-	/*border-right: 2px solid #e6e6ff;
-	border-left: 2px solid #e6e6ff;*/
 }
 
 /***FOOTER***/
