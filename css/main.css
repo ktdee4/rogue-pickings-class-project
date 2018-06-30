@@ -1,18 +1,19 @@
 /***BASE STYLES***/
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 }
 
-.container {
+#container {
+	width: 95%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
 header {
 	height: auto;
-	margin: 20px;
+	margin-top: 40px;
 }
 
 #rogue, nav, h2, #specials, #fresh {
@@ -21,7 +22,12 @@ header {
 
 h1, h2, h3, nav, footer {
 	text-transform: uppercase;
-	/*font-weight: 800;*/
+	font-weight: 700;
+}
+
+p {
+	font-size: 1em;
+	line-height: 150%;
 }
 
 /***HEADER***/
@@ -46,25 +52,32 @@ nav ul li {
 /***MAIN***/
 
 #green-beans {
-	border-top: 5px solid #77a466;
-	border-bottom: 5px solid #77a466;
-	margin: 20px 0px 20px 0px;
+	border-top: 2px solid #77a466;
+	border-bottom: 2px solid #77a466;
+	margin: 20px 0px 8px 0px;
 	clear: both;
 }
 
 .top-section {
-	border-bottom: 2px solid #e6e6ff;
+	border-bottom: 1px solid #e6e6ff;
 	clear: both;
 }
 
-/**** Float not working! ***/
-.left, .middle, .right {
-	width: 300px;
+h2 {
+	margin-bottom: 25px;
+}
+
+/*****MIDDLE*****/
+
+.third {
+	width: 32%;
+	height: auto;
 	float: left;
 }
-.middle {
-	border-left: 2px solid #e6e6ff;
-	border-right: 2px solid #e6e6ff;
+#middle {
+	border-left: 1px solid #e6e6ff;
+	border-right: 1px solid #e6e6ff;
+	margin: auto;
 }
 
 h2 {
@@ -73,6 +86,18 @@ h2 {
 
 h3 {
 	font-size: 0.75em;
+}
+
+#left h3 {
+	padding: 10px 0;
+}
+
+#middle h3, #right h3 {
+	padding: 10px 30px;
+}
+
+#middle p, #right p {
+	padding: 0 30px;
 }
 
 #specials {
@@ -86,5 +111,5 @@ footer {
 	margin: 20px 10px;
 	padding-top: 10px;
 	clear: both;
-	border-top: 2px solid 	#e6e6ff;
+	border-top: 1px solid 	#e6e6ff;
 }
