@@ -1,8 +1,10 @@
 /***BASE STYLES***/
-
+html {
+	font-size: 16px;
+}
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 1em;
 }
 
 #container {
@@ -21,6 +23,7 @@ header {
 }
 
 h1, h2, h3, nav, footer {
+	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -32,17 +35,17 @@ p {
 
 /***HEADER***/
 
-h1 {
+header h1 {
 	color: black;
 	font-size: 1.87em;
 	float: left;
 }
 
-nav {
+header nav {
 	float: right;
 }
 
-nav ul li {
+header nav ul li {
 	display: inline-block;
 	font-size: 0.87em;
 	margin: 8px;
@@ -51,56 +54,56 @@ nav ul li {
 
 /***MAIN***/
 
-#green-beans {
+#main-image {
+	width: 100%;
 	border-top: 2px solid #77a466;
 	border-bottom: 2px solid #77a466;
 	margin: 20px 0px 8px 0px;
 	clear: both;
 }
 
-.top-section {
+.top-section .main-title {
 	border-bottom: 1px solid #e6e6ff;
 	clear: both;
 }
 
-h2 {
+.top-section h2 {
 	margin-bottom: 25px;
+	font-size: 1.12em;
 }
+
 
 /*****MIDDLE*****/
 
-.third {
+.bottom-section .third {
 	width: 32%;
 	height: auto;
 	float: left;
 }
-#middle {
+
+.bottom-section #middle {
 	border-left: 1px solid #e6e6ff;
 	border-right: 1px solid #e6e6ff;
 	margin: auto;
 }
 
-h2 {
-	font-size: 1.12em;
-}
-
-h3 {
+.bottom-section .third h3 {
 	font-size: 0.75em;
 }
 
-#left h3 {
+.bottom-section .third #left h3 {
 	padding: 10px 0;
 }
 
-#middle h3, #right h3 {
+.bottom-section #middle h3, #right h3 {
 	padding: 10px 30px;
 }
 
-#middle p, #right p {
+.bottom-section #middle p, #right p {
 	padding: 0 30px;
 }
 
-#specials {
+.bottom-section #specials {
 	line-height: 250%;
 }
 
