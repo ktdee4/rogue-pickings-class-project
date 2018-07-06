@@ -29,15 +29,18 @@ h1, h2, h3, nav, footer {
 }
 
 p {
-	font-size: 1em;
 	line-height: 150%;
 }
 
 /***HEADER***/
 
+header {
+	font-size: 0.875em;
+}
+
 header h1 {
 	color: black;
-	font-size: 1.87em;
+	font-size: 2.15em;
 	float: left;
 }
 
@@ -47,12 +50,16 @@ header nav {
 
 header nav ul li {
 	display: inline-block;
-	font-size: 0.87em;
+	font-size: 1em;
 	margin: 8px;
 	font-weight: 600;
 }
 
-/***MAIN***/
+/***MAIN-TOP***/
+
+.top-section {
+	font-size: 1em;
+}
 
 #main-image {
 	width: 100%;
@@ -72,8 +79,24 @@ header nav ul li {
 	font-size: 1.12em;
 }
 
+.top-section p {
+	font-size: 1em;
+}
 
-/*****MIDDLE*****/
+
+/*****MAIN-BOTTOM*****/
+
+.bottom-section {
+	font-size: 1em;
+}
+
+.bottom-section .third h3 {
+	font-size: 0.75em;
+}
+
+.bottom-section p {
+	font-size: 1em;
+}
 
 .bottom-section .third {
 	width: 32%;
@@ -85,10 +108,6 @@ header nav ul li {
 	border-left: 1px solid #e6e6ff;
 	border-right: 1px solid #e6e6ff;
 	margin: auto;
-}
-
-.bottom-section .third h3 {
-	font-size: 0.75em;
 }
 
 .bottom-section .third #left h3 {
@@ -110,9 +129,20 @@ header nav ul li {
 /***FOOTER***/
 
 footer {
+	font-size: 1em;
 	text-align: center;
 	margin: 20px 10px;
 	padding-top: 10px;
 	clear: both;
 	border-top: 1px solid 	#e6e6ff;
+}
+
+/****MEDIA QUERIES****/
+
+@media all and (min-width: 768px) {
+	/*Tablet styles here*/
+}
+
+@media all and (min-width: 940px) {
+	/*Desktop styles here*/
 }
